@@ -1,0 +1,35 @@
+<div layout="row" layout-align="center" class="loginPanel" layout-margin>
+    <md-card class="login-card">
+        <div flex>
+            <div layout="row" layout-align="center">
+                <h2>Login</h2>
+            </div>
+            <form name="loginform">
+                <div layout="column" layout-padding>
+                    <div layout-align="center" layout-padding>
+                        <md-input-container class="md-block" md-no-float>
+                          <label>E-mail Address/Username</label>
+                          <input type="text" ng-model="username">
+                        </md-input-container>
+                    </div>
+
+                    <div layout-align="center" layout-padding>
+                        <md-input-container class="md-block" md-no-float>
+                          <label>Password</label>
+                          <input type="text" ng-model="password">
+                        </md-input-container>
+                    </div>
+                </div>
+                <md-card-footer>
+                    <div layout-padding flex-offset="5">
+                        <md-checkbox ng-model="rememberInfo">Remember me</md-checkbox>
+                    </div>
+                    <div layout="row" layout-align="center">
+                        <md-button href="#!/dashboard" class="md-raised md-primary">Login</md-button>
+                    </div>
+                </md-card-footer>
+
+            </form>
+        </div>
+    </md-card>
+</div>
